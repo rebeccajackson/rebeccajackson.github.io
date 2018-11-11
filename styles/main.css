@@ -30,22 +30,12 @@ ul{
     justify-content: space-between;
 }
 
-header h1{
-    padding: 0.5em;
-    
-}
-ul a{
-    color: white;
-    padding: 5px 5px 10px 5px;
-}
-
 aside{
     grid-area: aside;
 }
 
 main{
     grid-area: main;
-  
 }
 
 .content{
@@ -54,14 +44,9 @@ main{
     justify-content: space-around;
 }
 
-
 .box-links{
     width: 180px;
     height: 184px;
-}
-
-.about-box p{
-   text-align: center;
 }
 
 .sprint-box{
@@ -92,15 +77,13 @@ main{
     height: 100px;
 }
 
-.placeholder-sprints{
+.sprintpage-sprints{
     display: flex;
 }
 
 .list-side{
     display: flex;
 }
-
-
 
 .padding-example{
     margin: 10px;
@@ -112,16 +95,25 @@ footer{
     grid-area: footer;
     background-color: #191d20;
 }
-/*-------typography--------*/
+/*----------typography----------*/
 body{
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
 
+header h1{
+    padding: 0.5em;    
+}
+
+ul a{
+    color: white;
+    padding: 10px;
+}
+
 main h2{
     font-weight: 700;
-    font-size: 2em;
-    padding: 0.5em 0em;
+    font-size: 1.5em;
+    padding: 0.5em;
     letter-spacing: 0.1em;
 }
 
@@ -129,6 +121,16 @@ main p{
     font-weight: 600;
     padding: 0.5em;
 }
+
+main{
+    margin: 10px 0;
+}
+
+.text-justify p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .about-box{
     text-align: center;
     font-size: 2.5em;
@@ -145,6 +147,10 @@ main p{
     width: 180px;
     height: 180px; 
 }
+
+.about-box p{
+    text-align: center;
+ }
 
 .dev-box{
     border-radius: 20px;
@@ -178,6 +184,7 @@ a:active {
 .sprint-list a:hover{
     color:rgb(41, 115, 138);
 }
+
 .sprint-box{
     font-size: 3em;
 }
@@ -199,13 +206,14 @@ a:active {
     padding: 2px;
 }
 
-.placeholder-footer{
+.sprintpage-footer{
     padding: 2px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
+    text-align: right;
 }
 
 .about-footer{
@@ -248,11 +256,12 @@ a:active {
     z-index: -1;	
 }
 
-.sprint1-background{
+.sprint-background{
     grid-area: 2/1/2/5;
     background-image: url(images/background-landscape.JPG);
     filter: blur(10px);
     -webkit-filter: blur(10px);
+    opacity: 0.8;
     height: 100%;
     width: 100%;
     background-position: center;
