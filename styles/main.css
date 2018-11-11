@@ -81,6 +81,26 @@ main{
     display: flex;
 }
 
+.hobbies{
+    display: grid;
+    grid-template: "box1 box2 box3" auto
+        / 2fr 2fr 2fr;
+    z-index: 9;
+    margin-bottom: 15px;
+}
+
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+}
+
+.box3{
+    grid-area: box3;
+}
+
 .list-side{
     display: flex;
 }
@@ -194,19 +214,11 @@ a:active {
     font-size: 1.5em;
 }
 
-.sprint-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    color: white;
-}
-
 .sprint-footer p{
     padding: 2px;
 }
 
-.sprintpage-footer{
+.sprint-footer{
     padding: 2px;
     color: white;
     display: flex;
@@ -296,4 +308,42 @@ a:active {
     background-color: darkcyan;
     border: 2px solid black;
     margin: 10px;
+}
+
+.overlay-container{
+    position: relative;
+}
+.overlay-image{
+    display: block;
+    width: 90%;
+    height: auto;
+}
+
+.overlay-text{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-container:hover .overlay {
+    opacity: 0.8;
+  }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
 }
