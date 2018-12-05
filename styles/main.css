@@ -125,6 +125,11 @@ header h1{
     padding: 0.5em;    
 }
 
+aside h1{
+    text-align: center;
+    margin: auto;
+}
+
 ul a{
     color: white;
     padding: 10px;
@@ -201,12 +206,25 @@ a:active {
     color: rgb(41, 115, 138);
 } 
 
+.references{
+    color: rgb(88, 88, 88);
+    text-emphasis: bold;
+}
+
 .sprint-list a:hover{
     color:rgb(41, 115, 138);
 }
 
 .sprint-box{
     font-size: 3em;
+}
+
+.spacer{
+    margin-top: 10px;
+}
+
+.spacer p{
+    text-align: center;
 }
 
 .sprint-list a{
