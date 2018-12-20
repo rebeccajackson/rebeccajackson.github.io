@@ -357,3 +357,70 @@ a:active {
     transition: .5s ease;
     background-color: #008CBA;
 }
+
+/* Minesweeper styling */
+#message, #notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #message {
+    font-size: 1.5rem;
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .board div {
+    color: green;
+    font-size: 2rem;
+    width: 75px;
+    height: 75px;
+    border: 1px #ccc dotted;
+    border-radius: 10%;
+    background-color: white;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .board div:hover {
+    background-color: white;
+  }
+  
+  div.mine, div.mine:hover {
+    background: no-repeat center/60% url("images/shark.png") rgb(154, 220, 236);
+  }
+  
+  div.hidden {
+    background: #eee;
+  }
+  
+  div.hidden:hover {
+    background: #ccc;
+  }
+  
+  div.marked, div.marked:hover {
+    background: no-repeat center/60% url("images/mark.svg") rgb(255, 115, 0);
+  }
+  
+  .reset, .toggle{
+    padding: 10px;
+    margin: 10px;
+    border: 1px #ccc dotted;
+    border-radius: 10%;
+    background-color: #fff;
+  }
+  
+  .reset:hover{
+    background: #ccc;
+  }
+  
+  .toggle:hover{
+    background: #ccc;
+  }
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+  <title>My blog - Minesweeper challenge</title>
+</head>
+
+<body> 
+  <header class="homepage header-image"> 
+    <h1 class="heading-title">Rebecca's Dev Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sprintpage.html">Sprints</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="sprint-background"></div>
+
+  <aside>
+    <div class="sprint-box"> 5</div> 
+    <div id="message"></div>    
+  </aside>
+
+  <main>
+    
+    <div id="notes"></div>
+    
+    <div class="container">
+      <button class="reset">New Game</button>
+      <button class="toggle" onclick="toggleSize()">Toggle size</button>
+    </div>
+    <div class="board"></div>
+
+    <script src="lib/tests.js"></script>
+    <script src="lib/lib.js"></script>
+    <script src="minesweeper.js"></script>
+
+  </main>
+  
+</body>
+
+<footer class="sprint-footer">
+  <p>Sprint 5 Minesweeper Challenge</p>
+  <p>20 December 2018 </p>
+</footer>
+
+</html>
